@@ -4,11 +4,11 @@
   Usergrid.console = Usergrid.console || {};
 
   // for running Apigee App Services as a local server
-  var LOCAL_STANDALONE_API_URL = "http://localhost:8080";
+  var LOCAL_STANDALONE_API_URL = "http://localhost:8080/";
   var LOCAL_TOMCAT_API_URL = "http://localhost:8080/ROOT";
   var LOCAL_API_URL = LOCAL_STANDALONE_API_URL;
   var PUBLIC_API_URL = "https://api.usergrid.com/";
-  var FORCE_PUBLIC_API = true; // Always use public API
+  var FORCE_PUBLIC_API = false; // Always use public API
   if (!FORCE_PUBLIC_API && (document.domain.substring(0,9) == "localhost")) {
     Usergrid.ApiClient.setApiUrl(LOCAL_API_URL);
   }
