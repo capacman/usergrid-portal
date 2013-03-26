@@ -15,11 +15,11 @@
         default: {
             top_level_domain: "localhost",
             use_sso: false, // flag to override use SSO if needed set to ?use_sso=no
-            login_url: "https://vubuntu:8443/cas/login",
-            gatewayService: "http://vubuntu:8090/management/token",
+            login_url: "https://10.10.15.29:8443/cas/login",
+            gatewayService: "http://10.10.15.29:8090/management/token",
             loginService: "http://localhost:8000/index.html",
-            logout_url: "https://vubuntu:8443/cas/logout",
-            api_url: "http://vubuntu:8090/"
+            logout_url: "https://10.10.15.29:8443/cas/logout",
+            api_url: "http://10.10.15.29:8090/"
         },
 
         isTopLevelDomain: function () {
